@@ -7,7 +7,7 @@
 
 <p>
   <strong>Picture:</strong>
-  <%= @bee.picture %>
+  <%= image_tag(@bee.picture_url, width: 600) if @bee.picture.present? %>
 </p>
 
 <p>

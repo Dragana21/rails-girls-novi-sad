@@ -19,3 +19,4 @@ font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif; }
  footer { margin-top: 100px; }
  table, td, th { vertical-align: middle; border: none; }
  th { border-bottom: 1px solid #DDD; }
+ img {width: 100px}

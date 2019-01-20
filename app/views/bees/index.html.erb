@@ -7,7 +7,7 @@
     <tr>
       <th>porodica pcelica</th
       <th>Picture</th>
-      <th>Adress</th>
+    <strong><th>Adress</th></strong>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -16,7 +16,7 @@
     <% @bees.each do |bee| %>
       <tr>
         <td><%= bee.descrption %></td>
-        <td><%= bee.picture %></td>
+        <td><%= image_tag bee.picture_url, width: '100%' if bee.picture.present? %></td>
         <td><%= bee.adresse %></td>
         <td><%= link_to 'Show', bee %></td>
         <td><%= link_to 'Edit', edit_bee_path(bee) %></td>
